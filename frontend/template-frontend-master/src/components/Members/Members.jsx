@@ -12,7 +12,13 @@ function Members() {
   return (
     <ul>
       {members.map((member) => {
-        return <li>{member.Name}</li>;
+        return (
+          <character>
+            <img className="pictures" src={member.Avatar} alt={member.Name} />
+            <li>{member.Name}</li>
+            <li>{member.Quality}</li>
+          </character>
+        );
       })}
     </ul>
   );
