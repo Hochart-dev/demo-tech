@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const { db } = require('./conf');
 
 const app = express();
+app.use(cors());
 
 app.get('/Members', async (req, res) => {
   const [results] = await db.query('SELECT Name, Quality, Avatar FROM members');
