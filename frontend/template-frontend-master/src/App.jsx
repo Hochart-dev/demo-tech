@@ -1,9 +1,14 @@
-import SampleComponent from './components/SampleComponent';
+import './resetCSS.css';
+import Header from './components/Header/Header';
+import Contact from './components/ContactUs/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Header />
+      <Contact />
+      <Footer />
     </div>
   );
 }
