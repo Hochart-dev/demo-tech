@@ -11,6 +11,7 @@ app.get('/members', async (req, res) => {
   res.json(results);
 });
 
+// eslint-disable-next-line consistent-return
 app.post('/members', async (req, res) => {
   const { Name, Quality, Avatar } = req.body;
   const sql = 'INSERT INTO members (Name, Quality, Avatar) VALUES (?,?,?)';
