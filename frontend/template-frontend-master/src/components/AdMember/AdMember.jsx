@@ -19,8 +19,7 @@ export default function AdMember() {
     setAvatar(evt.target.value);
   };
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
+  const handleSubmit = () => {
     const dataToSend = {
       Name: inputName,
       Quality: inputQuality,
@@ -49,7 +48,7 @@ export default function AdMember() {
               value={inputQuality}
               onChange={handleChangeQuality}
               name="from_description"
-              placeholder="description"
+              placeholder="insert one Quality"
             />
           </label>
           <label htmlFor="avatar">

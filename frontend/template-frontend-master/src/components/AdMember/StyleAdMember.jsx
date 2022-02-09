@@ -4,28 +4,27 @@ const StyleAdMember = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 5vw;
-    border: 4px dotted;
+    width: 40vw;
   }
+
   div {
-    margin-top: 2vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
+    width: 100vw;
     height: 10vw;
     flex-direction: column;
     align-items: center;
-    border: 2px blue dotted;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    margin-bottom: 1vw;
+    color: white;
   }
 
   input {
-    width: 15vw;
-    border: 1px solid;
+    width: 20vw;
+    border: 5px solid;
     margin-top: 1%;
   }
 `;

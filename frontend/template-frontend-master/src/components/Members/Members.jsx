@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import StyleMembers from './StyleMembers';
 
 function Members() {
   const [members, setmembers] = useState([]);
@@ -10,17 +11,19 @@ function Members() {
   }, []);
 
   return (
-    <ul>
-      {members.map((member) => {
-        return (
-          <character>
-            <img className="pictures" src={member.Avatar} alt={member.Name} />
-            <li>{member.Name}</li>
-            <li>{member.Quality}</li>
-          </character>
-        );
-      })}
-    </ul>
+    <StyleMembers>
+      <div className="content">
+        {members.map((member) => {
+          return (
+            <div className="memberlist">
+              <img className="pictures" src={member.Avatar} alt={member.Name} />
+              <p>{member.Name}</p>
+              <p>{member.Quality}</p>
+            </div>
+          );
+        })}
+      </div>
+    </StyleMembers>
   );
 }
 

@@ -3,8 +3,11 @@ import styled from 'styled-components';
 const StyleHeader = styled.header`
   .logo {
     width: 22%;
-    height: auto;
     justify-content: center;
+  }
+
+  figcaption {
+    font-size: 2.3em;
   }
 
   figure {
@@ -14,14 +17,10 @@ const StyleHeader = styled.header`
     align-items: center;
   }
 
-  figcaption {
-    font-size: 2.3em;
-  }
-
   .header {
     display: flex;
     justify-content: center;
-    height: 5vw;
+    margin-top: 2vw;
     align-items: center;
   }
 `;
