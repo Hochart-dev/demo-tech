@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyleForm = styled.div`
+const StyleAdMember = styled.div`
   form {
     display: flex;
     flex-direction: column;
@@ -30,4 +30,4 @@ const StyleForm = styled.div`
   }
 `;
 
-export default StyleForm;
+export default StyleAdMember;
